@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+    #circle1,#circle2,#circle3,#circle4
+    {
+            width:200px;
+            height:200px;
+            border:2px solid black;
+            box-shadow:0px 0px 15px blue;
+            border-radius:50%;
+            float: left;
+            margin:10px;
+            position:relative;
+            text-align: center;
+            font-family: algerian;
+            font-size:45px;
+            font-weight: bolder;
+            color:darkred;
+            background-color:yellow;
+            border-width:40px 60px;
+            border-color:darkcyan lightcoral ;
+    animation-name:anim_rotation;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear;
+    animation-delay:2s;    
+        }
+    #circle2{
+        animation-name:anim_rotation2;
+        animation-duration:8s;
+        
+    }
+
+    @keyframes anim_rotation
+    {
+        0%{
+            transform: rotate(0deg)
+        }
+       100%{
+            transform: rotate(360deg)
+        }
+    }
+     @keyframes anim_rotation2
+    {
+        0%{
+            transform: rotate(360deg)
+        }
+       100%{
+            transform: rotate(0deg)
+        }
+    }
+    @keyframes anim_rotation2
+    {
+         0%{
+            transform: rotate(360deg);
+            top:0px;
+            left:0px;
+        }
+       25%{
+            transform: rotate(360deg);
+            top:0px;
+            left:350px;
+        }
+        50%{
+            transform: rotate(180deg);
+            top:350px;
+            left:350px;
+        }
+        75%{
+            transform: rotate(0deg);
+            top:350px;
+            left:0px;
+        }
+        100%{
+            transform: rotate(360deg);
+            top:0px;
+            left:0px;
+        }
+    }
+    
+    </style>
+    </head>
+    <body >
+        <img src='C:\Users\HP\Desktop\javacript\Nature images\n5.jpg'; height='100px' ;width="150px">
+        <div id='circle1'><br>A</div>
+        <div id='circle2'><br>M</div>
+        <div id='circle3'><br>M</div>
+        <div id='circle4'><br>A</div>
+        
+    </body>
+</html>
